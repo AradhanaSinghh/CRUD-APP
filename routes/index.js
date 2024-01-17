@@ -34,7 +34,7 @@ router.get('/find',async function(req, res) {
 router.get('/update', async function(req, res) {
   try {
     let updatedUser = await userModel.updateOne(
-      { job: "student" }, // Corrected syntax for matching the document
+      { job: "student" },
       { $set: { status: "intern" } }
     );
 

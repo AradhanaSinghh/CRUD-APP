@@ -6,6 +6,4 @@ const userSchema = mongoose.Schema({
   email: String,
   job: String
 });
-
-// Corrected: use mongoose.model (lowercase 'm')
 module.exports = mongoose.model("users", userSchema);
